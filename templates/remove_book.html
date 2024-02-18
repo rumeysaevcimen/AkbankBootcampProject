@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Sil</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Kitap Sil</h1>
+    <form method="POST" action="/remove_book">
+        <label for="title_to_remove">Silinecek Kitabın Adı:</label>
+        <input type="text" name="title_to_remove" required>
+
+        <button type="submit">Kitabı sil</button>
+    </form>
+    <a href="/">Ana sayfaya dön!</a>
+</body>
+</html>
